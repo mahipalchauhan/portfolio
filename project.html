@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Mahipal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+
+    .projects-container h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: rgb(18, 18, 62);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .project-card h2 {
+      color: rgb(146, 78, 209);
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: lightgray;
+      margin-bottom: 15px;
+    }
+
+    .project-links a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: aqua;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">MAHIPAL portfolio</div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html" >about</a></li>
+          <li><a href="project.html" class="active">project</a></li>
+          <li><a href="contact.html" >contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects-container">
+      <h1>My Projects</h1>
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h2>Disease Prediction Web App</h2>
+          <p>A machine learning-based Flask web app to predict diseases based on symptoms using Naive Bayes and TF-IDF.</p>
+          <p><strong>Tech:</strong> Python, Flask, ML, HTML/CSS</p>
+          <div class="project-links">
+            <a href="https://github.com/mahipalchauhan/disease-prediction" target="_blank">GitHub</a>
+            <a href="">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h2>Online Code Compiler</h2>
+          <p>A full-stack MERN app where users can write, compile, and run code online in various languages.</p>
+          <p><strong>Tech:</strong> React, Node.js, MongoDB, Express</p>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h2>Chat Application</h2>
+          <p>Real-time chat app using WebSockets with user login and message persistence.</p>
+          <p><strong>Tech:</strong> Node.js, Socket.io, MongoDB</p>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Add more projects similarly -->
+
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <div class="footer">
+    <div class="footer-section">
+      <h3>Mahipal's Portfolio</h3>
+      <p>Built with passion using HTML, CSS <br> and love for technology.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+    <li>Email: <a href="mailto:msc08022004@gmail.com">msc08022004@gmail.com</a></li>
+
+        <li>Location: Ahmedabad, India</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+  <h4>Connect</h4>
+  <ul>
+    <li>
+      <a href="https://github.com/mahipalchauhan" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/chauhan-mahipal-singh-71a7b1269" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</footer>
+</body>
+</html>

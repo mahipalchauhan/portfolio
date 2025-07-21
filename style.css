@@ -1,0 +1,261 @@
+
+        *{
+            margin:0;
+            padding:0;
+        }
+  body{
+    background-color: rgb(0, 0,33);
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+  }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  height: 70px;
+  background-color: rgb(18, 18, 62);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+.nav-left {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(146, 78, 209);
+}
+
+.nav-right ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-right ul li a {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-right ul li a:hover {
+  background-color: rgb(48, 48, 151);
+  color: aqua;
+  text-decoration:overline;
+}
+
+.nav-right ul li a.active {
+  background-color:rgb(14, 14, 52);
+  font-weight: bold;
+  font-size:1.9rem ;
+  text-decoration: solid;
+}
+
+
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin:80px 0;
+    }
+    .firstsection >div{
+        width:40%;
+    }
+     .leftsection{
+        font-size:3rem;
+     }
+     .rightsection img{
+        width: 90%;
+        height: 420px;
+        margin:30px 0;
+     }
+     .purple{
+       color: rgb(146, 78, 209); 
+     }
+      #element{
+        color: rgb(148, 83, 209);
+      }
+     main hr{
+        border:0;
+        background: rgb(148, 83, 209);
+        height:1.2px;
+        margin:10px 84px;
+      }
+      
+  .secondsection {
+  max-width: 90vw;
+  margin: 60px auto;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.secondsection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: rgb(246, 243, 248);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.secondsection .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin: 40px auto;
+  width: 90%;
+  border-top: 2px solid white;
+  padding-top: 40px;
+}
+
+.secondsection .vertical {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+}
+
+.image-top {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(146, 78, 209);
+  background-color: white;
+  position: absolute;
+  top: -65px;
+}
+
+.vertical-title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.vertical-desc {
+  color: lightgray;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  line-height: 1.4;
+  max-width: 180px;
+}
+
+footer {
+   background-color: rgb(18, 18, 62); 
+  padding: 30px 20px;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: rgb(146, 78, 209);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.footer-section ul li a i {
+  margin-right: 8px;
+  color: rgb(148, 83, 209);
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover i {
+  color: aqua;
+}
+
+
+    .btn{
+        margin: 5px;
+        padding: 13px;
+        background-color: rgb(68, 35, 68);
+        color: white;
+        border: 3px;
+        font-size: 20px;
+    }
+    
+ 
+    .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.skill-pill {
+  background-color: rgb(48, 28, 78);
+  padding: 14px 18px;
+  border-radius: 30px;
+  font-size: 2rem;
+  color: white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.skill-pill:hover {
+  transform: scale(1.05);
+  background-color: rgb(98, 58, 168);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+
+.leftsection p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
