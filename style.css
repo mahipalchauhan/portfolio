@@ -14,38 +14,31 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
-  height: 70px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
   background-color: rgb(18, 18, 62);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-}
-
-
-.nav-left {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: rgb(146, 78, 209);
 }
 
 .nav-right ul {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
   list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
 .nav-right ul li a {
   color: white;
-  font-size: 1.6rem;
   text-decoration: none;
-  padding: 8px 12px;
+  font-size: 1.3rem;
+  padding: 6px 10px;
   border-radius: 6px;
-  transition: all 0.3s ease;
+  transition: background 0.3s;
 }
 
 .nav-right ul li a:hover {
-  background-color: rgb(48, 48, 151);
-  color: aqua;
-  text-decoration:overline;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-right ul li a.active {
@@ -258,4 +251,47 @@ main {
   margin-bottom: 16px;
   line-height: 1.6;
   font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-right ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .firstsection {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .firstsection .leftsection,
+  .firstsection .rightsection {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .secondsection .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+.rightsection img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
